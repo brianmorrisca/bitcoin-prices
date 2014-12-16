@@ -1,18 +1,24 @@
 <template name="weighted">
-  <h1>Weighted Prices</h1>  
+  <h1>Weighted Prices</h1>
+
   <h3>bitcoin charts api</h3>
   <p>Todo: vs Gold</p>
   <p>Todo: vs USD (set up global helper for usd)</p>
-  {{#each weightedPrices }}
+  {{#each weightedPrices }}  
     {{> weightedContent}}  
   {{/each }}
 </template>
 
 <template name="weightedContent">
-  <div class="col-sm-3">
-    <h4>{{ curr }}</h4>
-    <p>Price: ${{ day }}</p>
-    <p>vs Weekly Avg: {{ vsWk }}%</p>
-    <p>vs Monthly Avg: {{ vsMth }}%</p>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><h3>{{ curr }}</h3></div>
+      <div class="panel-body">
+        <p>Price: ${{ day }}</p>
+        <p>vs Weekly Avg: {{ vsWk }}%</p>
+        <p>vs Monthly Avg: {{ vsMth }}%</p>
+      </div>
+      </div>
   </div>
+
 </template>

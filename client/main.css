@@ -14,3 +14,99 @@
   stroke: steelblue;
   stroke-width: 1.5px;
 }
+
+/* added */
+
+@import url(http://fonts.googleapis.com/css?family=Antic+Slab);
+
+html,body {
+  height:100%;
+}
+
+h1 {
+  font-family: 'Antic Slab', serif;
+  font-size:5em;
+  color:navy;
+}
+
+.lead {
+	color:blue;
+}
+
+
+/* Custom container */
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  min-height:100%;
+  background-color:#d3d3d3;
+  color:#eee;
+  overflow:hidden;
+}
+
+.container-full a {
+  color:#efefef;
+  text-decoration:none;
+}
+
+.v-center {
+  margin-top:7%;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+.top-bar a, .tabs a {
+    text-decoration: none;
+}
+
+div.row.copyright {
+    margin-top: 44px;
+    padding-top: 11px;
+    border-top: 1px solid #ddd;
+}
+
+.code {
+    border-left: 3px solid #ddd;
+    margin: 5px 3px 8px 15px;
+    padding: 0 0 0 8px;
+}
+
+.textviewContainer {
+    background-color: white;
+}
+
+.textviewContainer, .contentassist {
+    font-family: 'Droid Sans Mono', Menlo, Consolas, 'Courier New', Courier, monospace, sans-serif;
+    font-size: 10pt;
+}
+.contentassist {
+    width: 400px;
+}
+
+pre#editor {
+    border: 1px solid #ccc;
+}
+
+div#info {
+    margin-top: 22px;
+}
+
+.textviewTooltip {
+    color: black;
+    background-color: #ffffcc;
+    border-color: #aaa;
+}
+
+.annotationRange.readOccurrence {
+    background-color: #ffffcc;
+    border: none;
+}
+
+.annotationRange.writeOccurrence {
+    background-color: #ffffcc;
+    border: 1px solid #ffcc99;
+    margin: -1px;
+    border-radius: 4px;
+}

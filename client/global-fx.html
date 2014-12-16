@@ -1,6 +1,13 @@
 <template name="globalFx">
   <h1>Global FX</h1>
   {{#each globalFx}}
-    <span>{{ curr }}: {{ fxRate }}</span>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3>{{ curr }}</h3></div>
+        <div class="panel-body">
+		    <span>{{ fxRate }}</span>
+        </div>
+      </div>
+    </div>		   
   {{/each }}
 </template>

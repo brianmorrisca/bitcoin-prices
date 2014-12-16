@@ -1,18 +1,23 @@
 <template name ="markets">
   <h1>Markets</h1>
   {{#each allMarkets }}
-    <div class="col-sm-3">
-      <h3>Currency : {{ currency }}, {{ symbol }}</h3>
-      <p>latest_trade : {{ latest_trade }}</p>
-      <span>bid : {{ bid }}</span>
-      <span>ask : {{ ask }}</span>
-      <span>avg : {{ avg }}</span>
-      
-      <p>close : {{ close }}</p>
-      <p>high : {{ high }}</p>
-      <p>low : {{ low }}</p>
-      <p>Currency Volume : {{ currency_volume }}</p>
-      <p>Volume : {{ volume }}</p>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3>{{ currency }}, {{ symbol }}</h3></div>
+        <div class="panel-body">
+          <p>latest_trade : {{ latest_trade }}</p>
+          <span>bid : {{ bid }}</span>
+          <span>ask : {{ ask }}</span>
+          <span>avg : {{ avg }}</span>
+          
+          <p>close : {{ close }}</p>
+          <p>high : {{ high }}</p>
+          <p>low : {{ low }}</p>
+          <p>Currency Volume : {{ currency_volume }}</p>
+          <p>Volume : {{ volume }}</p>
+        </div>
+      </div>
     </div>
   {{/each }}
+
 </template>
